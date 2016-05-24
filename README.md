@@ -1,3 +1,3 @@
 work in progress 
 
-adds a link onto the category managment 
+adds a link to the front end page category page on the category managment
