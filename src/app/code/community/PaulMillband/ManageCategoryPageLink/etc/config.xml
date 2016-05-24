@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <PaulMillband_ManageCategoryPageLink>
+            <version>0.0.1</version>
+        </PaulMillband_ManageCategoryPageLink>
+    </modules>
+    <global>
+        <resources>
+            <paulmillband_managecategorypagelink>
+                <setup>
+                    <module>PaulMillband_ManageCategoryPageLink</module>
+                    <class>Mage_Catalog_Model_Resource_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </paulmillband_managecategorypagelink>
+            <paulmillband_managecategorypagelink_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </paulmillband_managecategorypagelink_write>
+            <paulmillband_managecategorypagelink_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </paulmillband_managecategorypagelink_read>
+        </resources>
+    </global>
+</config>
