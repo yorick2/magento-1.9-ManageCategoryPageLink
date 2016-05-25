@@ -2,7 +2,7 @@
 <config>
     <modules>
         <PaulMillband_ManageCategoryPageLink>
-            <version>0.0.1</version>
+            <version>1.0.0</version>
         </PaulMillband_ManageCategoryPageLink>
     </modules>
     <global>
@@ -20,9 +20,9 @@
     <adminhtml>
         <layout>
             <updates>
-            <managecategorypagelink>
-                <file>paulmillband_managecategorypagelink.xml</file>
-            </managecategorypagelink>
+                <managecategorypagelink>
+                    <file>paulmillband_managecategorypagelink.xml</file>
+                </managecategorypagelink>
             </updates>
         </layout>
     </adminhtml>
