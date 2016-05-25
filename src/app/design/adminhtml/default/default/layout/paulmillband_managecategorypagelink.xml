@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_catalog_category_edit>
+        <reference name="category.edit">
+            <block name="managecategorypagelink.buttons" type="managecategorypagelink/adminhtml_catalog_category_edit_buttons">
+                <action method="addButtons"></action>
+            </block>
+        </reference>
+    </adminhtml_catalog_category_edit>
+</layout>

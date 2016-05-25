@@ -3,6 +3,10 @@
         <PaulMillband_ManageCategoryPageLink>
             <active>true</active>
             <codePool>community</codePool>
+            <depends>
+              <Mage_Adminhtml />
+            </depends>
+
         </PaulMillband_ManageCategoryPageLink>
     </modules>
 </config>

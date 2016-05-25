@@ -6,26 +6,24 @@
         </PaulMillband_ManageCategoryPageLink>
     </modules>
     <global>
-        <resources>
-            <paulmillband_managecategorypagelink>
-                <setup>
-                    <module>PaulMillband_ManageCategoryPageLink</module>
-                    <class>Mage_Catalog_Model_Resource_Setup</class>
-                </setup>
-                <connection>
-                    <use>core_setup</use>
-                </connection>
-            </paulmillband_managecategorypagelink>
-            <paulmillband_managecategorypagelink_write>
-                <connection>
-                    <use>core_write</use>
-                </connection>
-            </paulmillband_managecategorypagelink_write>
-            <paulmillband_managecategorypagelink_read>
-                <connection>
-                    <use>core_read</use>
-                </connection>
-            </paulmillband_managecategorypagelink_read>
-        </resources>
+        <blocks>
+        <managecategorypagelink>
+            <class>PaulMillband_ManageCategoryPageLink_Block</class>
+        </managecategorypagelink>
+        </blocks>
+        <helpers>
+        <managecategorypagelink>
+            <class>PaulMillband_ManageCategoryPageLink_Helper</class>
+        </managecategorypagelink>
+        </helpers>
     </global>
+    <adminhtml>
+        <layout>
+            <updates>
+            <managecategorypagelink>
+                <file>paulmillband_managecategorypagelink.xml</file>
+            </managecategorypagelink>
+            </updates>
+        </layout>
+    </adminhtml>
 </config>
