@@ -6,9 +6,11 @@ class PaulMillband_ManageCategoryPageLink_Block_Adminhtml_Catalog_Category_Edit_
         $moduleName = 'managecategorypagelink';
         $buttonLabel = 'Go to category page';
         $buttonCode = 'PaulMillband_ManageCategoryPageLink_button';
-        
+
         $category = $this->getCategory();
-        $destinationUrl = $category->getUrl();
+        $categoryUrlPath = $category->getUrlPath();
+        $baseUrl = $this->getStore()->getBaseUrl();
+        $destinationUrl = $baseUrl . $categoryUrlPath;
         $isActive = $category->getIsActive();
         
         // only show button for active categories and not add new category page
