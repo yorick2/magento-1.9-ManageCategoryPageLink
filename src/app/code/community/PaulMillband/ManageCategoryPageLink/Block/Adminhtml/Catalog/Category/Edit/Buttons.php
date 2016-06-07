@@ -9,7 +9,13 @@ class PaulMillband_ManageCategoryPageLink_Block_Adminhtml_Catalog_Category_Edit_
 
         $category = $this->getCategory();
         $categoryUrlPath = $category->getUrlPath();
-        $baseUrl = $this->getStore()->getBaseUrl();
+        $categoryStoreIds = $category->getStoreIds();
+        $currentStoreId = $category->getStoreId();
+        if ($currentStoreId === 0 && sizeof($categoryStoreIds) > 1 ){
+            $baseUrl = Mage::app()->getStore($categoryStoreIds[1])->getBaseUrl();
+        }else {
+            $baseUrl = $this->getStore()->getBaseUrl();
+        }
         $destinationUrl = $baseUrl . $categoryUrlPath;
         $isActive = $category->getIsActive();
         
