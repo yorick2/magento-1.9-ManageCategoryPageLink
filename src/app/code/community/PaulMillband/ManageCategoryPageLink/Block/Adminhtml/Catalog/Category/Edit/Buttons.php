@@ -25,7 +25,7 @@ class PaulMillband_ManageCategoryPageLink_Block_Adminhtml_Catalog_Category_Edit_
                         ->addAdditionalButton($buttonCode, array(
                             'label' => $this->helper($moduleName)->__($buttonLabel),
                             'class' => 'add',
-                            'onclick' => 'setLocation(\'' . $destinationUrl .'\')'
+                            'onclick' => 'window.open(\'' . $destinationUrl .'\')'
             ));
         }
         return $this;

@@ -1,4 +1,3 @@
 src/app/code/community/PaulMillband/ManageCategoryPageLink app/code/community/PaulMillband/ManageCategoryPageLink
 src/app/design/adminhtml/default/default/layout/paulmillband_managecategorypagelink.xml app/design/adminhtml/default/default/layout/paulmillband_managecategorypagelink.xml
-
 src/app/etc/modules/PaulMillband_ManageCategoryPageLink.xml app/etc/modules/PaulMillband_ManageCategoryPageLink.xml
